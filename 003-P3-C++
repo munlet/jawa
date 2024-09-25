@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, nilai, total = 0;
+    cout << "masukkan banyak nilai: ";
+    cin >> n;
+    for (int i = 1; i <= n; i++) {
+        cout << "masukkan Nilai ke: " << i << ": ";
+        cin >> nilai;
+        if (nilai % 2 == 0) {
+            total += nilai;
+        }
+    }
+    cout << "Total jumlahnya adalah: " << total << endl;
+
+    return 0;
+}
