@@ -25,3 +25,33 @@ int main() {
 
     return 0;
 }
+
+//------------
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int i, n, awal, jumlah = 0, banyakGenap = 0;
+
+
+    cout << "Masukkan batas awal: ";
+    cin >> awal;
+    cout << "Masukkan batas akhir: ";
+    cin >> n;
+
+    
+    if (awal % 2 != 0) {
+        awal++;
+    }
+
+    for (i = awal; i <= n; i += 2) {
+        cout << i << endl;  
+        jumlah += i;       
+        banyakGenap++;      
+    }
+    cout << "Banyaknya bilangan genap: " << banyakGenap << endl;
+    cout << " Jumlah bilangan genap: " << jumlah << endl;
+
+    return 0;
+}
