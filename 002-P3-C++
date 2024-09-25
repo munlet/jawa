@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int i, n, awal, jumlah = 0, banyakGenap = 0;
+
+    // Input
+    cout << "masukan angka batas awal: ";
+    cin >> awal;
+    cout << "masukan angka batas akhir: ";
+    cin >> n;
+
+    //loop
+    for (i = awal; i <= n; i++) {
+        if (i % 2 == 0) {
+            cout << i << endl;  
+            jumlah += i;        
+            banyakGenap++;       
+        }
+    }
+
+   //output
+    cout << "Banyaknya bilangan genap: " << banyakGenap << endl;
+    cout << "Jumlah bilangan genap: " << jumlah << endl;
+
+    return 0;
+}
