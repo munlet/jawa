@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int i =1,N,jumlah=0;
+    cout << "Masukkan banyak bilangan: ";
+    cin >> N;
+
+    while (i<=N) {
+        cout << i*7;
+        if (i<N) {
+               cout << "+";
+        }
+        jumlah += i*7;
+        i++;
+    }
+    cout << " = " << jumlah << endl;
+    return 0;
+}
+
+//khalisha agmy p.m (17) 
+// maafkan aku tidak mendambahkan rerata karena tidak mengerti :D
